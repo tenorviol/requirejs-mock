@@ -1,5 +1,5 @@
 
-define(['bower_components/jquery/dist/jquery', 'js/message'], function ($, message) {
+define(['jquery', 'js/message'], function ($, message) {
 
   var args = Array.prototype.slice.call(arguments);
   console.log('define hello');

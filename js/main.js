@@ -7,5 +7,6 @@ requirejs.config({
   //never includes a ".js" extension since
   //the paths config could be for a directory.
   paths: {
+    jquery: 'bower_components/jquery/dist/jquery'
   }
 });

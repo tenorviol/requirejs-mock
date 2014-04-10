@@ -8,7 +8,9 @@ function requirejs() {
   var args = Array.prototype.slice.call(arguments);
   console.log('requirejs');
   console.log(args);
-  return originalRequire.apply(this, args);
+  var result = originalRequire.apply(this, args);
+  console.log(result);
+  return result;
 };
 
 requirejs.prototype = originalRequire;
@@ -19,11 +21,13 @@ function define() {
   var args = Array.prototype.slice.call(arguments);
   console.log('define');
   console.log(args);
-  return originalDefine.apply(this, args);
+  var result = originalDefine.apply(this, args);
+  console.log(result);
+  return result;
 }
 
 define.prototype = originalDefine;
-define.amd = true;
+define.amd = originalDefine.amd;
 
 global.require = global.requirejs = requirejs;
 global.define = define;
