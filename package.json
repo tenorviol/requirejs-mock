@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Mock requirejs dependencies for testing",
   "scripts": {
-    "test": "./node_modules/karma/bin/karma start karma.conf.js"
+    "test": "make test"
   },
   "keywords": [
     "requirejs",
